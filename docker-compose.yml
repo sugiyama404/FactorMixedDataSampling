@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    build: .
+    container_name: "math_py"
+    tty: true
+    volumes:
+      - ./opt:/root/opt
+      - ./bin/PythonStart:/root/PythonStart
